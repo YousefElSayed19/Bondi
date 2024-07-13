@@ -1,0 +1,466 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+::-webkit-scrollbar{
+    background: #33d1cc58;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--green-color);
+}   
+body {
+    height: 5000px;
+    font-family: "Roboto", sans-serif;
+}
+.container{
+    position: relative;
+}
+
+.tic{
+    width: 100px;
+}
+.title{
+    font-size: 30px;
+}
+.supTitle {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 15px;
+    color: rgba(60, 60, 60, 0.797);
+    position: relative;
+}
+.line{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 200px;
+    background: var(--green-color);
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+
+
+
+[data="yas"]{
+    background: transparent !important;
+}
+[date="no"]{   
+    background: url(../image/vector-planet-space-meteors-wallpaper-preview.jpg);
+    background-size: cover;
+}
+li a {
+    color: white !important;
+    font-size: 15px !important;
+}
+li .active , li:hover a {
+    color: var(--green-color) !important;
+}
+.search{
+    font-size: 20px;
+    color: var(--green-color);
+    border-left: 2px solid var(--green-color);
+    padding-inline: 15px;
+    margin-inline: 10px;
+}
+.button{
+    margin-top: 10px;
+    padding: 5px 15px;
+    font-size: 22px;
+    background: var(--red-color);
+    color: var(--yellow-color);
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.button:hover{
+    color: white;
+}
+.navbar-toggler{
+    font-size: 40px !important;
+    color: white !important;
+    background: var(--dark-color) !important;
+    border-color:white !important ;
+}
+.navbar-toggler i{
+    font-size: 20px !important;
+    color: white !important;
+}
+@media (max-width:1000px){
+    .search{
+        display: none;
+    }
+    nav .button {
+        display: none;
+    }
+}
+
+
+.landing{
+    background: url(../image/vector-planet-space-meteors-wallpaper-preview.jpg);
+    background-size: cover;
+    height: 100vh;
+    /* background: var(--dark-color); */
+    margin-bottom: 150px;
+}
+.landing h1 {
+    margin-top: 60px;
+    font-size: 40px !important;
+}
+.landing p {
+    color: rgba(255, 255, 255, 0.533);
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+
+
+.skills{
+    margin-bottom: 50px;
+}
+.skills .cards{
+    margin-top: 250px;
+}
+.skills .cards .cord {
+    position: relative;
+    z-index: 51;
+}
+.skills .cards .cord svg{
+    font-size: 60px !important;
+    color: var(--green-color);
+    margin-bottom: 20px;
+}
+.skills .cards .cord h1{
+    font-size: 35px;
+    color: var(--yellow-color);
+    margin-bottom: 20px;
+}
+.skills .cards .cord p{
+    color: rgba(65, 65, 65, 0.677);
+}
+.skills .cards .cord .number{
+    position: absolute;
+    font-size: 180px !important;
+    color: var(--section-color) !important;
+    top: -130px;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    z-index: -1;
+}
+
+@media(max-width:1000px){
+    .cards .cord{
+        margin-bottom: 140px;
+    }
+}
+
+.servers{
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background: var(--section-color);
+}
+.hov:hover{
+    cursor: pointer;
+    color: red;
+}
+.servers .cards{
+    margin-top: 50px;
+}
+.servers .row div img {
+    width: 100%;
+    border: 5px solid white;
+}
+
+.servers .row div {
+    position: relative;
+}
+.servers .row div::after {
+    content: "";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    width: 0;
+    height: 100%;
+    background-color: rgb(51 209 204 / 76%);
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    overflow: hidden;
+}
+.servers .row div:hover::after {
+    content: "Applications";
+    width: calc(100% - 20px);
+}
+
+.portofilo{
+    padding: 100px 0;
+    margin-bottom: -100px;
+}
+.portofilo .supTitle2{
+    margin-top: 100px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgba(105, 105, 105, 0.677);
+}
+.portofilo .name {
+    font-size: 20px;
+}
+.portofilo .caption {
+    font-size: 15px;
+    color: rgba(55, 55, 55, 0.722);
+}
+.portofilo .img img {
+    margin-top: 50px;
+    max-width: 80%;
+}
+
+.contact{
+    padding: 100px 0;
+    background: var(--section-color);
+    margin-bottom: 50px;
+}
+.contact .title {
+    color: var(--yellow-color);
+    font-weight: bold;
+}
+.contact .supTitle {
+    color: rgba(105, 105, 105, 0.677);
+    font-size: 20px;
+}
+.contact img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.contact img:hover {
+    transform: rotateZ(5deg) scale(1.2);
+    -webkit-transform: rotateZ(5deg) scale(1.2);
+    -moz-transform: rotateZ(5deg) scale(1.2);
+    -ms-transform: rotateZ(5deg) scale(1.2);
+    -o-transform: rotateZ(5deg) scale(1.2);
+}
+.contact .name {
+    z-index: 5;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+    background: #33d1cc;
+    padding: 20px 0;
+}
+.contact .text {
+    z-index: 5;
+    position: relative;
+    color: rgba(105, 105, 105, 0.677);
+    background: white;
+    padding: 15px 5px;
+}
+
+.logos{
+    padding-bottom: 50px;
+}
+.logos .row div {
+    margin-bottom: 20px;
+}
+
+.start{
+    margin-bottom: 100px;
+    padding: 40px 0 60px 0;
+    background: var(--dark-color);
+}
+.start h1{
+    color: white;
+}
+.start p{
+    color: rgba(255, 255, 255, 0.503);
+}
+.start .button{
+    margin: 40px 0;
+}
+
+
+
+.about .cards{
+    margin-top: 100px;
+    padding: 50px 12px;
+}
+.about .cards .cord{
+    width: calc((98% / 3 ) - 15px);
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.216);
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+.about .cards img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.about .cards .text{
+    padding: 10px;
+}
+.about .cards p{
+    color: rgba(105, 105, 105, 0.677);
+}
+.about .cards h1{
+    font-size: 22px;
+}
+@media(max-width:700px) {
+    .about .cards {
+        display: block;
+    }
+    .about .cards .cord{
+        width: 100%;
+    }
+}
+
+@media (min-width:700px) and (max-width:1000px){
+    .about .cards .cord{
+        width: calc((98% / 2 ) - 15px);
+    }
+}
+
+.subscribe{
+    background: var(--yellow-color);
+}
+.subscribe h1{
+    color: white;
+    font-weight: bold;
+}
+.subscribe input{
+    padding: 5px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.subscribe input::placeholder{
+    color: white;
+}
+.subscribe input:focus-visible{
+    outline: none;
+}
+
+
+
+.foot{
+    padding: 20px 40px;
+    background: var(--dark-color);
+}
+.foot p {
+    color: rgba(255, 255, 255, 0.503);
+}
+.foot h1 {
+    font-size: 22px;
+    margin-top: 10px;
+    color: white;
+}
+.foot .i{
+    color: var(--green-color);
+}
+.foot .ii{
+    color: var(--yellow-color);
+}
+
+.icons{
+    text-align: center;
+    margin-top: 30px;
+}
+.icons a {
+    font-size: 40px;
+    margin-left: 20px;
+}
+.icons i{
+    color: rgb(157, 157, 157);
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+}
+.icons i:hover{
+    color: var(--main-color);
+}
+
+a.up{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: var(--green-color);
+    text-decoration: none;
+    z-index: 1000000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    animation: up linear infinite 1s;
+    -webkit-animation: up linear infinite 1s;
+}
+@keyframes up{
+    0%{
+        transform: translateY(15px);
+        -webkit-transform: translateY(15px);
+        -moz-transform: translateY(15px);
+        -ms-transform: translateY(15px);
+        -o-transform: translateY(15px);
+    }
+    50%{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+    100%{
+        transform: translateY(15px);
+        -webkit-transform: translateY(15px);
+        -moz-transform: translateY(15px);
+        -ms-transform: translateY(15px);
+        -o-transform: translateY(15px);
+    }
+}
