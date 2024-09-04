@@ -114,6 +114,7 @@ li .active , li:hover a {
 .landing{
     background: url(../image/vector-planet-space-meteors-wallpaper-preview.jpg);
     background-size: cover;
+    background-position: center;
     height: 100vh;
     /* background: var(--dark-color); */
     margin-bottom: 150px;
